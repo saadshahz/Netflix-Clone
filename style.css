@@ -1,0 +1,382 @@
+
+*{  
+    margin: 0;
+    padding: 0; 
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+ } 
+ body{
+    background-color: black;
+    padding: 0;
+    color: white;
+ 
+    overflow-x:hidden ;
+
+}
+@media only screen and (max-width:600px)
+{
+
+}
+/* ----------------------header----------------- */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    padding: 10px 8%;
+    
+}
+@media only screen and (max-width:600px)
+{
+    
+}
+/* ------------------------Navbar-------------------------- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img {
+    width: 180px;
+    cursor: pointer;
+}
+.navbar button{
+    font-size: 15px;
+    color: white;
+    background-color: rgb(208, 0, 0);
+    width: 80px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width:600px)
+{
+    .navbar img{
+        width: 100px;
+    }
+    
+}
+/* -------------header-content----------- */
+.header-content{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    right: 10%;
+    left: 10%;
+
+}
+.header-content h1{
+    font-size: 55px;
+    margin: 10px;
+}
+/* .header-content h2{
+    font-size: 30px;
+    margin: 10px;
+} */
+.header-content p{
+    font-weight: 700;
+    margin: 10px;
+}
+.form{
+    max-width: 400px;
+    background-color: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    height: 50px;
+    position: absolute;
+    margin: 10px;
+    display: flex; 
+    align-items: center;
+    left: 32%;   
+    border-radius: 5px;
+    overflow: hidden;
+    border: 0.5px solid white;
+
+}
+.form input{
+    flex: 1;
+    font-size: 18px;
+    margin-left: 10px;
+    outline: 0;
+    height: 50px;
+    border: 0;
+    color: white;
+    background-color: transparent;
+}
+.form button{
+    height: 50px;
+    font-size: 17px;
+    background-color: rgb(208, 0, 0);
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (max-width:600px)
+{
+    .header-content{
+        position: absolute;
+        top: 30%;
+    }
+    .header-content h1{
+        font-size: 30px;
+        margin: 5px;
+    }
+    .header-content h2{
+        font-size: 20px;
+        margin: 5px;
+    }
+    .header-content p{
+        font-weight: 500;
+        margin: 5px;
+    }
+    
+.form{
+    max-width: 350px;
+    background-color: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    height: 50px;
+    position: absolute;
+    margin: 5px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    left: -10px;   
+    border-radius: 5px;
+    overflow: hidden;
+    border: 0.5px solid white;
+
+}
+.form button{
+    font-size: 12px;
+    font-weight: 500px;
+}
+}
+/* -------------------feaures------------------ */
+
+.features{
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+
+
+.box
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 5PX solid grey;
+    position: relative;
+}
+.box h1{
+    font-size: 60px;
+}
+.box img{
+    width: 100%;
+    /* margin: 10px; */
+}
+.box p{
+    font-size: 20px;
+    /* width: 100%; */
+  
+}
+@media only screen and (max-width:600px){
+
+.box
+{
+    display: block;
+
+    margin: 10px;
+    padding: 20px;
+ 
+    position: relative;
+}
+    .box h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+.box img{
+    width: 100%;
+    margin: 10px;
+}
+.box p{
+    font-size: 18px;
+    /* width: 100%; */
+  
+}
+}
+/* --------------------FAQ------------------------ */
+.faq{
+    max-width: 100%;
+    padding: 10px auto;
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid grey;
+
+
+}
+.faq h2{
+    font-size: 60px;
+    font-weight: 500px;
+
+}
+.accordian{
+    margin: 60px auto;
+    max-width: 800px;
+  
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+
+}
+.accordian li label:hover{
+    background-color: gray;
+}
+.accordian li label{
+    background: #303030;
+    display:flex;
+    margin:0px 10px;
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.accordian label::after{
+    content: '+';
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    transition: 0.5s;
+}
+input[type='radio']{
+    display: none;
+}
+.content {
+    background: #303030;
+    text-align: left;
+    padding: 0 10px;
+    margin: 10px; 
+    width: 100%;
+    font-size: 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.8s;
+}
+input[type='radio']:checked + label + .content{
+    max-height: 600px;
+    padding: 20px 10px ;
+    transition: 0.8s;
+}
+
+input[type='radio']:checked + label::after{
+    transform: rotate(45deg);
+}
+
+.email{
+    position: absolute;
+    left: 32%;
+    width: 479px;
+    margin: 10px;
+
+}
+.faq p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:600px)
+{
+
+    .accordian label::after{
+        content: '+';
+        font-size: 25px;
+        position: absolute;
+        right: 30px;
+        transition: 0.5s;
+    }
+    .email {
+        position: absolute;
+        left: 10%;
+        width:300px ;
+        margin: 5px;
+    }
+    .faq h2{
+        font-size: 40px;
+        font-weight: 500px;
+    
+    }
+    
+.accordian{
+    margin: 60px auto;
+    max-width: 400px;
+    font-size: 12px;
+  
+}
+.accordian li label{
+    font-size: 20px;
+}
+
+}
+/* --------------footer---------------- */
+.footer{
+    margin: 10px;
+    padding: 10px;
+}
+.footer-link{
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer h3{
+ 
+    margin: 10px;
+    margin-left: 150px;
+}
+.footer-link li {
+    list-style: none;
+   
+    margin: 10px;
+}
+.footer-link a{
+    color: white;
+    text-decoration: none;
+}
+.footer-link a:hover{
+    color: gray;
+}
+.language{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+.language option{
+    color: black;
+}
+/* ------------------Media Query---------------- */
+
+@media only screen and (max-width:600px)
+{
+    .footer{
+        margin: 5px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+}
