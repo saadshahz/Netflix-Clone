@@ -177,7 +177,9 @@
     position: relative;
 }
 .box h1{
-    font-size: 60px;
+    font-size: 50px;
+    width: 100%;
+    padding: 10px;
 }
 .box img{
     width: 100%;
